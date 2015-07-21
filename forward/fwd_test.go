@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mailgun/oxy/testutils"
-	"github.com/mailgun/oxy/utils"
+	"github.com/h2object/oxy/testutils"
+	"github.com/h2object/oxy/utils"
 
 	. "gopkg.in/check.v1"
 )

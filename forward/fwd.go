@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/mailgun/oxy/utils"
+	"github.com/h2object/oxy/utils"
 )
 
 // ReqRewriter can alter request headers and body

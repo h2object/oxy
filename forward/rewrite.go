@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/mailgun/oxy/utils"
+	"github.com/h2object/oxy/utils"
 )
 
 // Rewriter is responsible for removing hop-by-hop headers and setting forwarding headers

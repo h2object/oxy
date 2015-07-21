@@ -61,6 +61,7 @@ func New(next http.Handler, opts ...ReverseOption) (*ReverseRouter, error) {
 func (r *ReverseRouter) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	endpoint, err := r.route.Route(req)
 	if err != nil {
+		r.log.Errorf("Error reverse to %v, err: %v", req.URL, err)
 		r.errHandler.ServeHTTP(w, req, err)
 		return
 	}
